@@ -63,7 +63,7 @@ num-bigint = { workspace = true }
 rand = { workspace = true }
 tiny-bip39 = { workspace = true }
 wasm-bindgen = { workspace = true }
-zeroize = { workspace = true, features = ["default", "zeroize_derive"] }
+zeroize = { version = "1.0.0", features = ["default", "zeroize_derive"] }
 
 [target.'cfg(not(target_os = "solana"))'.dev-dependencies]
 solana-logger = { workspace = true }
