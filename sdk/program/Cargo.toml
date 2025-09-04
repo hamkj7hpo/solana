@@ -54,7 +54,7 @@ ark-ff = { workspace = true }
 ark-serialize = { workspace = true }
 base64 = { workspace = true, features = ["alloc", "std"] }
 bitflags = { workspace = true }
-curve25519-dalek = { git = "git@github.com:hamkj7hpo/curve25519-dalek.git", branch = "safe-pump-compat", features = ["serde"] }
+curve25519-dalek = { git = "https://github.com/hamkj7hpo/curve25519-dalek.git", branch = "safe-pump-compat", features = ["serde"] }
 itertools = { workspace = true }
 libc = { workspace = true, features = ["extra_traits"] }
 libsecp256k1 = { workspace = true }
