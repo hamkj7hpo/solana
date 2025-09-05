@@ -12,6 +12,7 @@ edition = { workspace = true }
 rust-version = "1.72.0" # solana platform-tools rust version
 
 [dependencies]
+curve25519-dalek = { git = "https://github.com/hamkj7hpo/curve25519-dalek.git", branch = "safe-pump-compat-v2", package = "curve25519-dalek", features = ["serde"] }
 bincode = { workspace = true }
 blake3 = { workspace = true, features = ["digest", "traits-preview"] }
 borsh = { workspace = true }
@@ -54,7 +55,6 @@ ark-ff = { workspace = true }
 ark-serialize = { workspace = true }
 base64 = { workspace = true, features = ["alloc", "std"] }
 bitflags = { workspace = true }
-curve25519-dalek = { git = "https://github.com/hamkj7hpo/curve25519-dalek.git", branch = "safe-pump-compat-v2", package = "curve25519-dalek", features = ["serde"] }
 itertools = { workspace = true }
 libc = { workspace = true, features = ["extra_traits"] }
 libsecp256k1 = { workspace = true }
