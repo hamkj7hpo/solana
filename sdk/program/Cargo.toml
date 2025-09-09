@@ -47,7 +47,7 @@ thiserror = { workspace = true }
 # Remove this once borsh 0.11 or 1.0 is released, which correctly declares the
 # hashbrown dependency as optional.
 [target.'cfg(target_os = "solana")'.dependencies]
-getrandom = { git = "https://github.com/rust-random/getrandom.git", branch = "master", features = ["custom"] }
+getrandom = { version = "0.2.15", features = ["custom"] }
 
 [target.'cfg(not(target_os = "solana"))'.dependencies]
 ark-bn254 = { workspace = true }
@@ -71,7 +71,7 @@ solana-logger = { workspace = true }
 [target.'cfg(target_arch = "wasm32")'.dependencies]
 console_error_panic_hook = { workspace = true }
 console_log = { workspace = true }
-getrandom = { git = "https://github.com/rust-random/getrandom.git", branch = "master", features = ["custom"] }
+getrandom = { version = "0.2.15", features = ["custom"] }
 js-sys = { workspace = true }
 
 [target.'cfg(not(target_pointer_width = "64"))'.dependencies]
