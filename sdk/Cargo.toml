@@ -3,7 +3,7 @@ name = "solana-sdk"
 description = "Solana SDK"
 documentation = "https://docs.rs/solana-sdk"
 readme = "README.md"
-version = { workspace = true }
+version = ""
 authors = { workspace = true }
 repository = { workspace = true }
 homepage = { workspace = true }
@@ -66,7 +66,7 @@ pbkdf2 = { workspace = true }
 qstring = { workspace = true }
 qualifier_attr = { workspace = true }
 rand = { workspace = true, optional = true }
-rand0-7 = { package = "rand", version = "0.7", optional = true }
+rand0-7 = { package = "rand", version = "", optional = true }
 rustversion = { workspace = true }
 serde = { workspace = true }
 serde_bytes = { workspace = true }
