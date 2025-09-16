@@ -2,7 +2,7 @@
 name = "solana-zk-token-sdk"
 description = "Solana ZK Token SDK"
 documentation = "https://docs.rs/solana-zk-token-sdk"
-version = "="
+version = "1.25.0"
 authors = { workspace = true }
 repository = { workspace = true }
 homepage = { workspace = true }
